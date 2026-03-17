@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header id="header">
-      <h1>My Portfolio</h1>
-      <nav>
-        <ul>
+      <h1 class="nav-title">My Portfolio</h1>
+      <nav class="navbar">
+        <ul class="nav-buttons">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -18,5 +22,54 @@
         </ul>
       </nav>
     </header>
+    <section id="home">
+      <h2 class="home-title">Hi, I'm Fred Charles</h2>
+      <p>A Student And Aspiring Web Developer</p>
+      <div class="b-wrapper">
+        <button class="hb">View Projects</button>
+        <button class="hb2">Contact Me</button>
+      </div>
+    </section>
+    <section id="about">
+      <h2 class="a-title">About Me</h2>
+      <div class="divider"></div>
+      <div class="about-grid">
+        <div class="about-left">
+          <div class="photo-wrapper">
+            <img src="assets/Profilepic.png" alt="Fred Charles" />
+          </div>
+          <p class="about-name">Fred Charles G. Racho</p>
+          <p class="about-role">Student & Aspiring Web Developer</p>
+        </div>
+        <div class="about-right">
+          <div class="education">
+            <span class="e-span">Education</span>
+            <h3 class="course">Bachelor of Science in Computer Science</h3>
+            <p class="university">North Eastern Mindanao State University</p>
+            <span class="year">2022 - 2026</span>
+            <p class="description">
+              Currently pursuing a degree in Computer Science with a focus on
+              web development.
+            </p>
+          </div>
+          <div class="skills">
+            <span class="s-skill">Skills</span>
+            <ul class="l-skills">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Node.js</li>
+            </ul>
+          </div>
+          <div class="experience">
+            <span class="e-experience">Experiences</span>
+            <h3 class="internship">Web Development Intern</h3>
+            <p class="company">Tech Solutions Inc.</p>
+            <span class="duration">June 2023 - August 2023</span>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
