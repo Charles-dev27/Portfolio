@@ -138,25 +138,156 @@ body{
 }
 
 /* About */
-/* #about{
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  flex-direction: column;
-  text-align: center;
-  padding: var(--space-lg) var(--space-sm);
-} */
-.a-title{
+#about {
+  min-height: 100vh;
+  padding: var(--space-xl) var(--space-lg);
+  background-color: var(--bg);
+}
+
+.section-title {
+  font-family: var(--font-heading);
   color: var(--heading);
   font-size: var(--text-xl);
-  font-family: var(--font-heading);
   margin-bottom: var(--space-sm);
-  margin-left: 35px;
 }
-.divider{
+
+.section-divider {
   width: 80px;
   height: 7px;
   background-color: var(--accent);
-  margin-left: 35px;
+  border-radius: var(--radius-pill);
+  margin-bottom: var(--space-lg);
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  align-items: center;
+}
+.photo-wrapper{
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--accent);
+}
+.photo-wrapper img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.about-name{
+  color: var(--heading);
+  font-size: var(--text-lg);
+  margin-top: var(--space-sm);
+  font-size: var(--text-xl);
+}
+.about-role{
+  color: var(--label);
+  font-size: var(--text-base);
+  margin-top: var(--space-xs);
+}
+
+.block-label{
+  font-family: var(--font-body);
+  color: var(--muted);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-xs);
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.course{
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  color: var(--heading);
+}
+.university{
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--label);
+  margin-top: var(--space-xs);
+}
+.year{
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--muted);
+  margin-top: var(--space-xs);
+}
+.description{
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--text);
+  margin-bottom: var(--space-lg);
+}
+hr{
+  border: none;
+  border-top: 1px solid var(--divider);
+  margin: var(--space-lg) 0;
+  height: 5px;
+  width: 100%;
+  margin: auto;
+}
+.skills{
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+.skills ul{
+  list-style: none;
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+.skills li{
+  background-color: var(--surface);
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--radius-md);
+  color: var(--text);
+  border:2px solid var(--border);
+  transition: 0.3s ease;
+  font-size: var(--text-base);
+  font-weight: bold;
+}
+.l-skills li .badge-dot{
+  background-color: var(--text);
+  color: var(--accent);
+  height: 8px;
+  width: 8px;
   border-radius: var(--radius-sm);
+}
+.l-skills li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-xs);
+}
+.skills li:hover{
+  background-color: var(--accent-hover);
+  transition: 0.3s ease;
+}
+.experience{
+  margin-top: var(--space-md);
+}
+.internship{
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  color: var(--heading);
+}
+.company{
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--label);
+  margin-top: var(--space-xs);
+}
+.duration{
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--muted);
+  margin-top: var(--space-xs);
 }
