@@ -534,7 +534,7 @@ input, textarea {
   justify-content: center;
   background-color: var(--navbar);
   border-top: 1px solid var(--divider);
-  font-size: var(--text-base);
+  font-size: var(--text-sm);
 }
 .footer h3{
   padding: var(--space-md) var(--space-lg);
